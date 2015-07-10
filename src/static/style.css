@@ -1,0 +1,20 @@
+@font-face {
+	font-family: "Source Sans Pro";
+        src: url('/static/SourceSansPro-Regular.otf');
+	font-weight: 400;
+}
+
+@font-face {
+        font-family: "Source Sans Pro";
+        src: url('/static/SourceSansPro-Bold.otf');
+        font-weight: 600;
+}
+
+body {
+	margin-top: 1em;
+	font-size: 1em;
+}
+
+body, input, button, p, li, h1, h2, h3, h4, h5, h6 {
+	font-family: "Source Sans Pro", sans-serif;
+}

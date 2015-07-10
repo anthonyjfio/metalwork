@@ -1,0 +1,19 @@
+{
+  "name": "metalsmith-framework",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "koa": "*",
+    "koa-static": "*",
+    "jade": "*",
+    "metalsmith": "*",
+    "metalsmith-beautify": "*",
+    "metalsmith-collections": "*",
+    "metalsmith-markdown": "*",
+    "metalsmith-permalinks": "*",
+    "metalsmith-templates": "*",
+    "moment": "*"
+  }
+}
