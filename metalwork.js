@@ -36,4 +36,4 @@ app.use(serve(__dirname + '/build'));
 
 app.listen('3000');
 
-console.log('listening on port 3000');
+console.log('Metalwork is listening at http://localhost:3000/');
