@@ -3,17 +3,18 @@ html
   include header.jade
   body
     .contain
-      .eight.col
-        h1 <a href="http://evbogue.com">METALSMITH-<span style="color: #999;">FRAMEWORK</span></a>
+      .twelve.col
+        h1 <a href="/">METAL<span style="color: #999;">WORK</span></a>
         hr
+      .eight.col
         h3= title
         p(style='color: #666;')= "Date: " + moment().format('MMMM Do YYYY, h:mm:ss a')
         div!= contents
         hr
       .four.col
-        h3 Posts
+        h3 Blog
         ul
           each blog in collections.blog
             li 
-              a(href="//" + blog.path + "/")= blog.title
+              a(href="/" + blog.path + "/")= blog.title
         include footer.jade
