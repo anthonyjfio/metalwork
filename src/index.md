@@ -8,11 +8,12 @@ Metalwork is a built-out Metalsmith blog that works.
 
 Metalwork is built using Node.js, Jade, Framework.css, and served using Koa.js. It uses the following Metalsmith plugins: metalsmith-collections, metalsmith-permalinks, metalsmith-markdown, metalsmith-templates, and metalsmith-beautify.
 
-You can view the code at gitlab/ev/metalwork
+You can view the code at [Gitlab](//gitlab.com/ev/metalwork/)
 
 To install metalwork, be sure to install the latest version of io.js
 
-	% git clone metalwork && cd metalwork && npm install
+	% git clone git@gitlab.com:ev/metalwork.git
+	% cd metalwork && npm install
 	% node metalwork.js
 	Metalwork is listening at http://localhost:3000/
 
@@ -25,5 +26,5 @@ You can also
 	% node metalwork.js
 	Metalwork is listening at http://localhost:3000/
 
-To get the same result.
+to get the same result.
 
