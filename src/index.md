@@ -18,4 +18,12 @@ To install metalwork, be sure to install the latest version of io.js
 
 Navigate to http://localhost:3000/ to view your site.
 
+You can also 
+
+	% npm install metalwork
+	% cd node_modules/metalwork
+	% node metalwork.js
+	Metalwork is listening at http://localhost:3000/
+
+To get the same result.
 
