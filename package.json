@@ -5,6 +5,7 @@
     "name": "Ev Bogue",
     "email": "ev@evbogue.com"
   },
+  "homepage": "http://metalwork.evbogue.com/",
   "scripts": {
     "start": "node index.js"
   },
