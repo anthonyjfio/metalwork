@@ -1,0 +1,5 @@
+h4 Blog posts
+ul
+  each blog in collections.blog
+    li= moment(blog.date).format('YYYY-MM-DD') + " - " 
+      a(href="/" + blog.path + "/")= blog.title

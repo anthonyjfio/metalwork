@@ -13,10 +13,6 @@ html
           div!= blog.contents
           hr
       .four.col
-        h3 Blog
-        ul
-          each blog in collections.blog
-            li 
-              a(href="/" + blog.path + "/")= blog.title
+        include nav.jade
       .twelve.col
         include footer.jade
