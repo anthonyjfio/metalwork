@@ -8,7 +8,8 @@ html
         hr
       .eight.col
         each blog in collections.blog
-          h3= blog.title
+          h3
+            a(href="/" blog.path + "/")= blog.title
           p(style='color: #666;')= moment(blog.date).format('MMMM Do YYYY')
           div!= blog.contents
           hr
