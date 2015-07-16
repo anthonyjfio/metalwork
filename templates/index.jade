@@ -7,10 +7,11 @@ html
         h1 <a href="/">METAL<span style="color: #999;">WORK</span></a>
         hr
       .eight.col
-        h3= title
-        p(style='color: #666;')= moment(blog.date).format('MMMM Do YYYY')
-        div!= contents
-        hr
+        each blog in collections.blog
+          h3= blog.title
+          p(style='color: #666;')= moment(blog.date).format('MMMM Do YYYY')
+          div!= blog.contents
+          hr
       .four.col
         h3 Blog
         ul

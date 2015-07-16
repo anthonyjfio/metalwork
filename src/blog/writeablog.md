@@ -1,7 +1,7 @@
 ---
 title: How to write a blog post
 template: post.jade
-date: Thu Jul  9 20:20:43 CDT 2015
+date: 2015-07-09
 collection: blog
 ---
 
