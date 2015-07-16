@@ -6,7 +6,7 @@ To get started
 
 	% npm install metalwork
 	% cd node_modules/metalwork
-	% node metalwork.js
+	% node index.js
 
 Navigate to [http://localhost:3000/](http://localhost:3000/)
 
