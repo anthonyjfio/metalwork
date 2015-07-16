@@ -24,5 +24,5 @@ Here is a basic blog post:
 
 To render the new post, relaunch metalwork.
 
-	% node metalwork.js
+	% node index.js
 
