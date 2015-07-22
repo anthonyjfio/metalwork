@@ -5,6 +5,12 @@
     "name": "Ev Bogue",
     "email": "ev@evbogue.com"
   },
+  "contributors": [
+    {
+    "name": "Joseph Post",
+    "email": "joe@jcpst.com"
+    }
+  ],
   "homepage": "http://metalwork.evbogue.com/",
   "scripts": {
     "start": "node index.js"
