@@ -10,6 +10,11 @@ html
         h3= title
         p(style='color: #666;')= moment(blog.date).format('MMMM Do YYYY')
         div!= contents
+
+        if previous
+          p: a(href="#{'/' + previous.path + '/'}") Previous | #{previous.title} 
+        if next
+          p: a(href="#{'/' + next.path + '/'}") Next | #{next.title}
         hr
       .four.col
         include nav.jade
