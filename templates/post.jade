@@ -8,7 +8,7 @@ html
         hr
       .eight.col
         h3= title
-        p(style='color: #666;')= moment(blog.date).format('MMMM Do YYYY')
+        p(style='color: #666;')= moment(date).format('MMMM Do YYYY')
         div!= contents
         if previous
           p: a(href="#{'/' + previous.path + '/'}") Previous | #{previous.title} 
