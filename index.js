@@ -24,7 +24,7 @@ metalsmith(__dirname)
 	}))
         .use(templates({
         engine: 'jade',
-        moment: moment
+        moment
         }))
 	.use(beautify())
 	.destination('./build')
