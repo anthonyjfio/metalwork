@@ -1,6 +1,6 @@
 # Metalwork
 
-Metalwork is a built out [Metalsmith](http://metalsmith.io/) blog that works. More info: [http://metalwork.evbogue.com](http://metalwork.evbogue.com/)
+Metalwork is a built out [Metalsmith](http://metalsmith.io/) blog that works. More info: [http://evbogue.com/metalwork/](http://evbogue.com/metalwork/)
 
 To get started
 
