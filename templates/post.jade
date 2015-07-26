@@ -11,9 +11,9 @@ html
         p(style='color: #666;')= moment(date).format('MMMM Do YYYY')
         div!= contents
         if previous
-          p(style='text-align: left; float: left;'): a(href="#{previous.path}/") #{'<< ' + previous.title}
+          p(style='text-align: left; float: left;'): a(href="#/{previous.path}/") #{'<< ' + previous.title}
         if next
-          p(style='text-align: right; float: right;'): a(href="#{next.path}/") #{next.title + ' >>'}
+          p(style='text-align: right; float: right;'): a(href="/#{next.path}/") #{next.title + ' >>'}
  
         hr
       .four.col
