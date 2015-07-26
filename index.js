@@ -20,7 +20,7 @@ metalsmith(__dirname)
                 }
 }))
         .use(permalinks({
-	  pattern: ':collections/:title'
+	  pattern: ':collections:title'
 	}))
         .use(templates({
         engine: 'jade',
@@ -30,6 +30,7 @@ metalsmith(__dirname)
 	.destination('./build')
 	.build(function(err) {
 		if (err) {throw err; }
+                console.log('Metalwork has been built');
 	});
 
 app.use(serve(__dirname + '/build'));
