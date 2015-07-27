@@ -1,7 +1,7 @@
 ---
 title: What is Metalwork?
 template: post.jade
-date: 2015-07-16CST
+date: 2015-07-16
 collection: blog
 ---
 
