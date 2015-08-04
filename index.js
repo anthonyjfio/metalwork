@@ -6,11 +6,19 @@ var koa         = require('koa'),
     collections	= require('metalsmith-collections'),
     permalinks	= require('metalsmith-permalinks'),
     beautify	= require('metalsmith-beautify'),
+    feed        = require('metalsmith-feed'),
     moment	= require('moment');
 
 app = koa();
 
 metalsmith(__dirname)
+    .metadata({
+        site: {
+            title: 'evbogue.com',
+            url: 'evbogue.com',
+            author: 'Ev Bogue'
+        }
+    })
 	.use(markdown())
 	.use(collections({
           blog: {
@@ -26,6 +34,7 @@ metalsmith(__dirname)
         engine: 'jade',
         moment
         }))
+        .use(feed({collection: 'blog'}))
 	.use(beautify())
 	.destination('./build')
 	.build(function(err) {
