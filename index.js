@@ -12,13 +12,13 @@ var koa         = require('koa'),
 app = koa();
 
 metalsmith(__dirname)
-    .metadata({
-        site: {
-            title: 'evbogue.com',
-            url: 'evbogue.com',
+        .metadata({
+            site: {
+                title: 'Metalwork',
+            url: 'http://evbogue.com/metalwork/',
             author: 'Ev Bogue'
-        }
-    })
+            }
+        })
 	.use(markdown())
 	.use(collections({
           blog: {
@@ -26,15 +26,15 @@ metalsmith(__dirname)
                 sortBy: 'date',
                 reverse: 'True'
                 }
-}))
+        }))
         .use(permalinks({
 	  pattern: ':collections:title'
 	}))
+        .use(feed({collection: 'blog'}))
         .use(templates({
         engine: 'jade',
         moment
         }))
-        .use(feed({collection: 'blog'}))
 	.use(beautify())
 	.destination('./build')
 	.build(function(err) {
