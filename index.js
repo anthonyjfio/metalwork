@@ -9,38 +9,39 @@ var koa         = require('koa'),
     feed        = require('metalsmith-feed'),
     moment	= require('moment');
 
-app = koa();
 
 metalsmith(__dirname)
         .metadata({
             site: {
-                title: 'Metalwork',
-            url: 'http://evbogue.com/metalwork/',
-            author: 'Ev Bogue'
+                  title: 'Metalwork',
+                  url: 'http://evbogue.com/metalwork/',
+                  author: 'Ev Bogue'
             }
         })
 	.use(markdown())
 	.use(collections({
-          blog: {
+            blog: {
                 pattern: './blog/*.md',
                 sortBy: 'date',
                 reverse: 'True'
                 }
         }))
         .use(permalinks({
-	  pattern: ':collections:title'
+	    pattern: ':collections:title'
 	}))
         .use(feed({collection: 'blog'}))
         .use(templates({
-        engine: 'jade',
-        moment
+            engine: 'jade',
+            moment
         }))
 	.use(beautify())
 	.destination('./build')
 	.build(function(err) {
-		if (err) {throw err; }
-                console.log('Metalwork has been built');
+	    if (err) {throw err; }
+            console.log('Metalwork has been built');
 	});
+
+app = koa();
 
 app.use(serve(__dirname + '/build'));
 
