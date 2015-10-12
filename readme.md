@@ -1,6 +1,8 @@
 # Metalwork
 
-Metalwork is a built out [Metalsmith](http://metalsmith.io/) blog that works. More info: [http://evbogue.com/metalwork/](http://evbogue.com/metalwork/)
+Metalwork is a built out [Metalsmith](http://metalsmith.io/) blog that works. 
+
+See Metalwork in action: [http://evbogue.com/metalwork/](http://evbogue.com/metalwork/)
 
 To get started
 
@@ -10,7 +12,7 @@ To get started
 
 Navigate to [http://localhost:3000/](http://localhost:3000/)
 
-Use the latest version of [io.js](http://iojs.org/) for best results.
+Use the [latest version of Node.js](http://nodes.org/) for best results.
 
 Questions? [ev@evbogue.com](mailto:ev@evbogue.com)
 
