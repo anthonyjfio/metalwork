@@ -12,7 +12,7 @@ To get started
 
 Navigate to [http://localhost:3000/](http://localhost:3000/)
 
-Use the [latest version of Node.js](http://nodes.org/) for best results.
+Use the [latest version of Node.js](http://nodejs.org/) for best results.
 
 Questions? [ev@evbogue.com](mailto:ev@evbogue.com)
 
