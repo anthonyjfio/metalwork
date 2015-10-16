@@ -1,7 +1,7 @@
 ---
 title: About Metalwork
 date: 2015-07-26
-template: post.jade
+layout: post.jade
 ---
 
 
@@ -11,7 +11,7 @@ Metalsmith is a static site generator created by the people at Segment.io. Metal
 
 This is why I decided to release a genericized version of the built-out version of Metalsmith that I use at evbogue.com.
 
-Metalwork is built using Node.js, Jade, Framework.css, and served using Koa.js. It uses the following Metalsmith plugins: metalsmith-collections, metalsmith-permalinks, metalsmith-markdown, metalsmith-templates, and metalsmith-beautify.
+Metalwork is built using Node.js, Jade, Framework.css, and served using Koa.js. It uses the following Metalsmith plugins: metalsmith-collections, metalsmith-permalinks, metalsmith-markdown, metalsmith-layouts, and metalsmith-beautify.
 
 Metalwork is opinionated. If you want to do it yourself, you are welcome to do that instead.
 

@@ -2,7 +2,7 @@ var koa         = require('koa'),
     serve	= require('koa-static'),
     metalsmith 	= require('metalsmith'),
     markdown	= require('metalsmith-markdown'),
-    templates 	= require('metalsmith-templates'),
+    layouts 	= require('metalsmith-layouts'),
     collections	= require('metalsmith-collections'),
     permalinks	= require('metalsmith-permalinks'),
     beautify	= require('metalsmith-beautify'),
@@ -30,7 +30,7 @@ metalsmith(__dirname)
 	    pattern: ':collections:title'
 	}))
         .use(feed({collection: 'blog'}))
-        .use(templates({
+        .use(layouts({
             engine: 'jade',
             moment
         }))

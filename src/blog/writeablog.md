@@ -1,6 +1,6 @@
 ---
 title: How to write a blog post
-template: post.jade
+layout: post.jade
 date: 2015-07-09
 collection: blog
 ---
@@ -9,7 +9,7 @@ To write a new blog post
 
 	% vim src/blog/newblog.md
 
-Blog posts are written using markdown with YAML frontmatter, as many blogs are written. Because of how metalsmith-collections and metalsmith-templates work, you need to specify your collection and template.
+Blog posts are written using markdown with YAML frontmatter, as many blogs are written. Because of how metalsmith-collections and metalsmith-layouts work, you need to specify your collection and template.
 
 Here is a basic blog post:
 

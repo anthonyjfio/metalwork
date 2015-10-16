@@ -9,6 +9,10 @@
     {
       "name": "Joseph Post",
       "email": "joe@jcpst.com"
+    },
+    {
+      "name": "Anthony Fiorani",
+      "email": "anthony@anthonyfiorani.com"
     }
   ],
   "homepage": "http://metalwork.evbogue.com/",
@@ -23,9 +27,9 @@
     "metalsmith-beautify": "*",
     "metalsmith-collections": "*",
     "metalsmith-feed": "0.0.6",
+    "metalsmith-layouts": "^1.4.1",
     "metalsmith-markdown": "*",
     "metalsmith-permalinks": "*",
-    "metalsmith-templates": "*",
     "moment": "*"
   }
 }

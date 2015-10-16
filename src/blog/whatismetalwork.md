@@ -1,13 +1,13 @@
 ---
 title: What is Metalwork?
-template: post.jade
+layout: post.jade
 date: 2015-07-16
 collection: blog
 ---
 
 Metalwork is a built-out Metalsmith blog that works.
 
-Metalwork is built using Node.js, Jade, Framework.css, and served using Koa.js. It uses the following Metalsmith plugins: metalsmith-collections, metalsmith-permalinks, metalsmith-markdown, metalsmith-templates, and metalsmith-beautify.
+Metalwork is built using Node.js, Jade, Framework.css, and served using Koa.js. It uses the following Metalsmith plugins: metalsmith-collections, metalsmith-permalinks, metalsmith-markdown, metalsmith-layouts, and metalsmith-beautify.
 
 You can view the code at [Gitlab](//gitlab.com/ev/metalwork/)
 
